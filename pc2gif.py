@@ -42,7 +42,7 @@ def window_loop():
 
         # Redraw if needed
         if redraw and cloud:
-            window_main.fill([0,0,0])
+            window_main.fill([255,255,255])
             for p in cloud.points:
                 if len(p) == 3:
                     color = (coloring.DEFAULT_COLORING(cloud, p)) # Add colors to the point
